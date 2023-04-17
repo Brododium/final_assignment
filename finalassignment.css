@@ -1,0 +1,358 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    background-color: white;
+  }
+
+  body.dark-mode {
+    background-color: black;
+    color: white;
+  }
+
+  #dark-button {
+    background-image: url("images/moon-icon.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer; /* changes the cursor to a pointer when mousing over an interactable button */
+    margin: 5px;
+    background-color: white;
+    opacity: 70%;
+  }
+
+  #light-button {
+    background-image: url("images/sun-icon.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+  }
+  
+  h1, nav {
+    margin: 0;
+    font-family: 'IM Fell English', serif;
+  }
+  
+  .product-container {
+    padding: 50px 5px;
+  }
+  
+  .call-to-action-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9fa268 ;
+    border-bottom: 2px solid #5e5bb3;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 15px auto;
+    text-align: center;
+    transition: 0.4s ease-in-out;
+    width: 250px;
+    height: auto;
+  }
+  
+  .call-to-action-button:hover {
+    background-color: #5e5bb3;
+  }
+
+
+  .main-button:hover {
+    background-color: #5e5bb3;
+    border: none;
+    transition: 0.4s ease-in-out;
+  }
+  
+  .main-button-text {
+    font-size: 16pt;
+    margin-top: 10px;
+    padding: 10px;
+    border: solid 1pt gold;
+    cursor: pointer;
+  }
+  
+  .image-mask-darken {
+    position: relative;
+  }
+  
+  .image-mask-darken:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+  }
+  
+  .top-header {
+    align-items: center;
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+  }
+  
+  .logo-container {
+    width: 150px;
+    background-color: white;
+  }
+  
+  .top-ribbon-nav {
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 10px;
+    
+  }
+  
+  .gh-logo {
+    padding: 10px 30px;
+    width: 70px;
+  }
+  
+  .top-nav-element {
+    cursor: pointer;
+    padding: 10px 30px;
+  }
+
+  #navbar-search {
+    width: 20%;
+    transition: width 1s;
+  }
+  
+  #navbar-search:hover {
+    width: 100%;
+  }
+
+  #navbar-search.active {
+    width: 100%;
+    outline: none;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hero-image {
+    align-items: center;
+    background-image: url('images/hero2.png');
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 550px;
+  }
+
+  .acknowledgements-image {
+    display: flex;
+    width: 90%;
+    align-items: center;
+  }
+
+  .header-content {
+    color: rgb(255, 255, 255);
+    text-shadow:
+    0.5px 0.5px 0 #00000050,
+    -0.5px -0.5px 0 #00000050,
+    0.5px -0.5px 0 #00000050,
+    -0.5px 0.5px 0 #000;
+    position: absolute;
+    text-align: center;
+    width: 400px;
+  }
+  
+  .product-title {
+    font-size: 64px;
+  }
+  
+  .product-descriptor {
+    font-size: 16px;
+  }
+  
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .acknowledgements-page a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .gh-footer {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+   
+  .category-container {
+    padding: 50px 5px;
+  }
+
+  .category-title {
+    font-size: 32px;
+    text-align: center;
+  }
+  
+  .airbnb-neighborhood-subtitle {
+    font-size: 14px;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .three-category-container {
+    justify-content: center;
+    display: flex;
+  }
+
+  /* stylings for when the screen width is 549 px and below, should display all categories in a single column */
+  @media (max-width: 549px) {
+    .three-category-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+  
+    .indiv-category-container {
+      flex-basis: 90%;  /* this should set the width of the category container to 90pc of its parents, the three-category-container */
+    }
+  
+    .header-content {
+      margin: 15%;
+      width: 90%;
+    }
+  }
+  
+  
+  
+  
+  .indiv-category-container {
+    margin: 1%;
+    width: 30%;
+  }
+  
+  .indiv-category-header {
+    align-items: center;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: space-around;
+    text-align: center;
+  }
+  
+
+  .existing-campaigns  { background-image: url('images/solo.png'); }
+  .existing-players { background-image: url('images/recruit.png'); }
+  .new-campaigns      { background-image: url('images/new-campaign.png');}
+  
+  
+  .category-header-content {
+    position: absolute;
+  }
+  
+  .category-title {
+    font-size: 24px;
+  }
+
+  .category-flavour-text {
+    background: rgba(0, 0, 0, 0.5);
+    width: 75%;
+    text-align: center;
+    margin: auto;
+  }
+
+  hr {
+    border: 1px solid rgba(255,255,255,0.2);
+    margin-bottom: 40px;
+    width: 95%;
+  }
+
+  .show-description p {
+    height: 150px;
+  }
+  
+  .show-description small {
+    opacity: 1;
+  }
+
+  /* everything below is for the testimonials section */
+
+
+  .airbnb-middle-content-container {
+    align-items: center;
+    background-color: white;
+    display: flex;
+    height: 75px;
+    padding: 10px;
+    justify-content: space-around;
+  }
+  
+  .airbnb-middle-icon {
+    padding-right: 12px;
+  }
+  
+  .airbnb-middle-titles {
+    background-color: #edefed;
+    font-size: 14px;
+    padding: 12px 18px;
+  }
+  
+  .airbnb-middle-content {
+    line-height: 1.4;
+    padding-right: 12px;
+  }
+
+  
+  .airbnb-middle {
+    align-items: center;
+    background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+    
+  .airbnb-indiv-neighborhood-details {
+    background-color: #efefef;
+    border: 1px solid #dbdbdb;
+    line-height: 1.4;
+    margin: 0;
+    min-height: 50px;
+    padding: 20px;
+  }
+  
+  .airbnb-footer {
+    align-items: center;
+    background-color: #2B2D2E;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: center;
+  }
+
+  @media (min-width: 550px) {
+    .airbnb-middle {
+      flex-direction: row;
+    }
+  }
+  
+  .airbnb-middle-box {
+    border: 1px solid #dbdbdb;
+    width: 96%;
+  }
+  
+  @media (min-width: 550px) {
+    .airbnb-middle-box {
+      width: 48%;
+    }
+  }
